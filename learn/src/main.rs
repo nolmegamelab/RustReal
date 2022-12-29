@@ -1,3 +1,6 @@
+mod learn_vulkan;
+mod learn_wgpu;
+
 fn main() {
-    println!("Hello, world!");
+    pollster::block_on(learn_wgpu::run());
 }
